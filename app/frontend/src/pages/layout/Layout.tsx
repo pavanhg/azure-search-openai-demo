@@ -1,6 +1,7 @@
 import { Outlet, NavLink, Link } from "react-router-dom";
 
-import github from "../../assets/github.svg";
+//import github from "../../assets/github.svg";
+import whizlabs from "../../assets/whizlabs.svg";
 
 import styles from "./Layout.module.css";
 
@@ -27,12 +28,12 @@ const Layout = () => {
                             <li className={styles.headerNavLeftMargin}>
                                 <a href="https://aka.ms/entgptsearch" target={"_blank"} title="Github repository link">
                                     <img
-                                        src={github}
-                                        alt="Github logo"
-                                        aria-label="Link to github repository"
-                                        width="20px"
-                                        height="20px"
-                                        className={styles.githubLogo}
+                                        src={whizlabs}
+                                        alt="Whizlabs logo"
+                                        aria-label="Link to Whizlabs Website"
+                                        width="50px"
+                                        height="50px"
+                                        className={styles.whizlabs}
                                     />
                                 </a>
                             </li>
