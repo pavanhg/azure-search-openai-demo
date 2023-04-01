@@ -11,7 +11,8 @@ const Layout = () => {
             <header className={styles.header} role={"banner"}>
                 <div className={styles.headerContainer}>
                     <Link to="/" className={styles.headerTitleContainer}>
-                        <h3 className={styles.headerTitle}>GPT + Enterprise data | Sample</h3>
+                        <img src={whizlabs} alt="Whizlabs logo" aria-label="Link to Whizlabs Website" width="50px" height="50px" className={styles.whizlabs} />
+                        <h3 className={styles.headerTitle}>Whizlabs GPT</h3>
                     </Link>
                     <nav>
                         <ul className={styles.headerNavList}>
@@ -24,18 +25,6 @@ const Layout = () => {
                                 <NavLink to="/qa" className={({ isActive }) => (isActive ? styles.headerNavPageLinkActive : styles.headerNavPageLink)}>
                                     Ask a question
                                 </NavLink>
-                            </li>
-                            <li className={styles.headerNavLeftMargin}>
-                                <a href="https://aka.ms/entgptsearch" target={"_blank"} title="Github repository link">
-                                    <img
-                                        src={whizlabs}
-                                        alt="Whizlabs logo"
-                                        aria-label="Link to Whizlabs Website"
-                                        width="50px"
-                                        height="50px"
-                                        className={styles.whizlabs}
-                                    />
-                                </a>
                             </li>
                         </ul>
                     </nav>
